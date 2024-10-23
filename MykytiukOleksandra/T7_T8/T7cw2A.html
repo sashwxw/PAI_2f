@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T8cw2A</title>
+</head>
+<body>
+    <p id="a"></p>
+    <script>
+        let out=document.getElementById("a");
+        function password(password){
+            if(password=="funkcje"){
+                out.innerHTML="Hasło prawidłowe";
+            }
+            else{
+                out.innerHTML="Hasło nieprawidłowe";
+            }
+        }
+        let pin1=prompt("Podaj hasło: ");
+        password(pin1);
+    </script>
+</body>
+</html>

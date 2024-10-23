@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T8cw1B</title>
+</head>
+<body>
+    <p id="a"></p>
+    <script>
+        let out=document.getElementById("a");
+        let sum=(x,y)=> x+y;
+        
+        let sub=(x,y)=> x-y;
+        
+        let mul=(x,y)=>  x*y;
+
+        let div=(x,y)=>{
+            if(y==0){
+                out.innerHTML += "Nie można dzielić przez zero!!<br>";
+            }
+            else{
+                return x/y;
+            }
+        } 
+        let a = parseInt(prompt("Podaj pierwszą liczbę: "));
+        let b = parseInt(prompt("Podaj drugą liczbę: "));
+        let sum1=sum(a,b);
+        out.innerHTML += `Suma: ${sum1}<br>`;
+        let sub1=sub(a,b);
+        out.innerHTML += `Różnica: ${sub1}<br>`;
+        let mul1=mul(a,b);
+        out.innerHTML += `Iloczyn: ${mul1}<br>`;
+        let div1=div(a,b);
+        out.innerHTML += `Iloraz: ${div1}<br>`;
+    </script>
+</body>
+</html>

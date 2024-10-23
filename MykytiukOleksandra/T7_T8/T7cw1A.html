@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T8cw1A</title>
+</head>
+<body>
+    <p id="a"></p>
+    <script>
+        let out = document.getElementById("a");
+        function sum(x, y) {
+            let sum=x+y;
+            out.innerHTML += `Suma: ${sum}<br>`;
+        }
+        function sub(x, y){
+            let sub = x - y;
+            out.innerHTML += `Różnica: ${sub}<br>`;
+        }
+        function mul(x, y){
+            let mul = x * y;
+            out.innerHTML += `Iloczyn: ${mul}<br>`;
+        }
+        function div(x, y){
+            if (y == 0) {
+                out.innerHTML += "Nie można dzielić przez zero!!<br>";
+            } else {
+                let div = x / y;
+                out.innerHTML += `Iloraz: ${div}<br>`;
+            }
+        }
+        let a = parseInt(prompt("Podaj pierwszą liczbę: "));
+        let b = parseInt(prompt("Podaj drugą liczbę: "));
+        sum(a, b);
+        sub(a,b);
+        mul(a,b);
+        div(a,b);
+    </script>
+</body>
+</html>

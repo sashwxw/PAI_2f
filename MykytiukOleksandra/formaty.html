@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="utf-8">
+    <title>Formatowanie</title>
+    <link rel="stylesheet" href="styl2.css">
+</head>
+<body>
+<header>
+    <h1>Formatowanie dokumentów HTML</h1>
+</header>
+<section id="panele">
+    <div class="panel" id="panel1">
+        <h2>Przykład listy - hobby</h2>
+        <ul type="square">
+            <li>muzyka</li>
+            <li>turystyka</li>
+            <ol type="1">
+                <li>góry</li>
+                <li>jeziora</li>
+                <li>na rowerze</li>
+            </ol>
+            <li>książki</li>
+        </ul>
+    </div>
+    <div class="panel" id="'panel2">
+        <h2>Przykład tabeli - rozkład dnia</h2>
+        <table border="1">
+            <tr>
+                <th><b>Pora dnia</b></th>
+                <th><b>obowiązki</b></th>
+            </tr>
+            <tr>
+                <th>rano</th>
+                <th>nauka</th>
+            </tr>
+            <tr>
+                <th>południe</th>
+                <th>zajęcia dodatkowe</th>
+            </tr>
+            <tr>
+                <th>popołudnie</th>
+                <th rowspan=2>moje hobby</th>
+            </tr>
+            <tr>
+                <th>wieczór</th>
+            </tr>
+        </table>
+    </div>
+    <div class="panel" id="panel3">
+        <img src="napisy.png" alt="technologia web">
+    </div>
+</section>
+<main>
+    <form action="" method="post">
+        <label>Podaj rozmiar tekstu w procentach: <input type="number">%</label>
+        <p>
+        <select>
+            <option value="prosty">prosty</option>
+            <option value="kursywa">kursywa</option>
+        </select>
+        </p>
+        <lable>Jakim kolorem sformatować tekst? Wybierz przecisk</lable>
+        <div>
+        <button class="r"></button>
+        <button class="g"></button>
+        <button class="b"></button>
+        </div>
+        <p>To jest przykład paragrafu, który może być dowolnie formatowany przez JavaScript</p>
+    </form>
+</main>
+<footer>
+    <p>Formatowaniem tekstu zajmowała się: 08272814147</p>
+    <a href="http://formatowanie.pl" target="_blank">Odwiedź także</a>
+</footer>
+</body>
+</html>

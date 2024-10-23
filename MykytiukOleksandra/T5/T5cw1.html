@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="a"></p>
+    <script>
+        let color=parseInt(prompt("Podaj kolor w języku angielskim: "));
+        let b=document.getElementById("a");
+        if(color=="red"){
+            b.innerHTML="czerwony";
+        }
+        else if(color=="blue"){
+            b.innerHTML="niebieski";
+        }
+        else if(color=="green"){
+            b.innerHTML="zielony";
+        }
+        else if(color=="yellow"){
+            b.innerHTML="żółty";
+        }
+        else{
+            b.innerHTML="Nie znam takiego koloru";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T5cw4</title>
+</head>
+<body>
+    <script>
+        let first = parseInt(prompt("Podaj pierwszą liczbę: "));
+        let second = parseInt(prompt("Podaj drugą liczbę: "));
+        let third = parseInt(prompt("Podaj trzecią liczbę: "));
+
+        if (first <= second && first <= third) {
+            if (second <= third) {
+                document.write(first, ", ", second, ", ", third);
+            } else {
+                document.write(first, ", ", third, ", ", second);
+            }
+        } else if (second <= first && second <= third) {
+            if (first <= third) {
+                document.write(second, ", ", first, ", ", third);
+            } else {
+                document.write(second, ", ", third, ", ", first);
+            }
+        } else {
+            if (first <= second) {
+                document.write(third, ", ", first, ", ", second);
+            } else {
+                document.write(third, ", ", second, ", ", first);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+body{
+    margin:0;
+}
+header, footer{
+    background-color:  #4BA3C7;
+    height: 80px;
+    color: white;
+    font-size: 120%;
+}
+main{
+    height: 400px;
+    display: flex;
+
+}
+h1{
+    text-align: center;
+    margin: 0;
+}
+section,aside{
+    background-color:  #EFEFEF;
+    height: 400px;
+    width: 25%;
+}
+article{
+    background-color:  #90CAF9;
+    height: 400px;
+    width: 50%;
+
+}
+table, td{
+    border: 1px solid  #90CAF9;
+}
+table{
+    margin: 10px;
+    width: 90%;
+}
+td{
+    padding: 5px;
+}
+h2{
+    text-align: center;
+}

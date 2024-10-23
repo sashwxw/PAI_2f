@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T9cw4b</title>
+</head>
+<body>
+    <style>
+        table, tr, th, td{
+            border: solid black 1px;
+        }
+    </style>
+    <table>  
+        <script>
+            document.write(`<tr>`);
+            let dane=new Array("imie", "nazwisko", "wiek", "wzrost", "data urodzenia", "klasa");
+            for(let i=0; i<dane.length; i++){
+                document.write(`<th> ${dane[i]}</th>`);
+            }
+            document.write(`</tr>`);
+
+            document.write(`<tr>`);
+                let name=prompt("Podaj swoje imie: ");
+                let surname=prompt("Podaj swoje nazwisko: ");
+                let age=prompt("Podaj swój wiek: ");
+                let height=prompt("Podaj swój wzrost: ");
+                let birth=prompt("Podaj swoją date urodzenia: ");
+                let clas=prompt("Podaj swoją klasę: ");
+                let inf=new Array(name, surname, age, height, birth, clas);
+                for(let i=0; i<inf.length; i++){
+                document.write(`<td> ${inf[i]}</td>`);
+                }
+            document.write(`</tr>`);
+        </script>
+    </table>
+</body>
+</html>
