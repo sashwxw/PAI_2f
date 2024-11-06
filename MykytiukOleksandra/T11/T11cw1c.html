@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T11cw1c</title>
+</head>
+<body>
+    <p id="a"></p>
+    <script>
+        let out=document.getElementById("a");
+   
+        class person{
+            constructor(name, surname, hight, wight){
+                this.name = name;
+                this.surname = surname;
+                this.hight = hight;
+                this.wight = wight;
+            }
+                greet ()
+                {
+                    return `Witaj ${this.name} ${this.surname}<br>`;
+                }
+
+                information (){
+                    return `Imię i nazwisko: ${this.name} ${this.surname}<br>
+                    Wzrost: ${this.hight}<br>
+                    Waga: ${this.wight}<br>`;
+                }
+        
+    }
+        
+        let person1 = new person("Sasha", "Mykytiuk", 170, 50);
+        console.log(person1);
+        out.innerHTML+=person1.greet();
+        out.innerHTML+=person1.information();
+        let person2 = new person("Masha", "Czorna", 165, 52);
+        console.log(person2);
+        out.innerHTML += person2.greet();
+        out.innerHTML += person2.information();
+    </script>  
+</body>
+</html>

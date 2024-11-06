@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T11cw1b</title>
+</head>
+<body>
+    <p id="a"></p>
+    <script>
+        let out=document.getElementById("a");
+        function Person(name, surname, hight, wight)
+        {
+            this.name = name;
+            this.surname = surname;
+            this.hight = hight;
+            this.wight = wight;
+        
+            this.greet = function()
+            {
+                return `Witaj ${this.name} ${this.surname}<br>`;
+            };
+            this.information = function(){
+                return `Imię i nazwisko: ${this.name} ${this.surname}<br>
+                Wzrost: ${this.hight}<br>
+                Waga: ${this.wight}<br>`;
+            };
+        }
+
+        
+       /* let name1 = prompt("Podaj imię: ");
+        let surname1 = prompt("Podaj nazwisko: ");
+        let hight1 = parseInt(prompt("Podaj wzrost: "));
+        let wight1 = parseInt(prompt("podaj wagę: "));*/
+        let person1 = new Person("Sasha", "Mykytiuk", 170, 50);
+        console.log(person1);
+        out.innerHTML += person1.greet();
+        out.innerHTML += person1.information();
+
+
+        /*let name2 = prompt("Podaj imię: ");
+        let surname2 = prompt("Podaj nazwisko: ");
+        let hight2 = parseInt(prompt("Podaj wzrost: "));
+        let wight2 = parseInt(prompt("podaj wagę: "));*/
+        let person2 = new Person("Masha", "Czorna", 165, 52);
+        console.log(person2);
+        out.innerHTML += person2.greet();
+        out.innerHTML += person2.information();
+    </script>  
+</body>
+</html>

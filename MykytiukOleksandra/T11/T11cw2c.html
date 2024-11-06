@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T11cw2b</title>
+</head>
+<body>
+    <p id="a"></p>
+    <script>
+        let out=document.getElementById("a");
+        class right_triangle
+        {
+            constructor(a,b)
+            {
+                this.a=a;
+                this.b=b;
+            }
+            c(){
+                let c=Math.sqrt(this.a*this.a+this.b*this.b);
+                return c;
+            };
+            area(){
+                return (this.a*this.b)/2;
+            };
+            perimetr(){
+                return (this.a+this.b+this.c());
+            }
+        }
+        
+        
+        let right_triangle1=new right_triangle(6,8);
+        out.innerHTML+=`<b>Trójkąt prostokątny 1: </b><br>
+                        Pryprostokąntna a = ${right_triangle1.a}<br>
+                        Przyprostokąnta b = ${right_triangle1.b}<br>
+                        Przeciwprostokątna c = ${right_triangle1.c()}<br>`;
+        out.innerHTML+=`Pole = ${Math.round(right_triangle1.area())} <br>`;
+        out.innerHTML+=`Obwód = ${Math.round(right_triangle1.perimetr())}<br><br>`;
+        console.log(right_triangle1);
+        
+        let right_triangle2=new right_triangle(3,9);
+        out.innerHTML+=`<b>Trójkąt prostokątny 2: </b><br>
+                        Pryprostokąntna a = ${right_triangle2.a}<br>
+                        Przyprostokąnta b = ${right_triangle2.b}<br>
+                        Przeciwprostokątna c = ${right_triangle2.c()}<br>`;
+        out.innerHTML+=`Pole = ${Math.round(right_triangle2.area())} <br>`;
+        out.innerHTML+=`Obwód = ${Math.round(right_triangle2.perimetr())}<br><br>`;
+        console.log(right_triangle2);
+
+        let right_triangle3=new right_triangle(4,2);
+        out.innerHTML+=`<b>Trójkąt prostokątny 3:</b> <br>
+                        Pryprostokąntna a = ${right_triangle3.a}<br>
+                        Przyprostokąnta b = ${right_triangle3.b}<br>
+                        Przeciwprostokątna c = ${right_triangle3.c()}<br>`;
+        out.innerHTML+=`Pole = ${Math.round(right_triangle3.area())} <br>`;
+        out.innerHTML+=`Obwód = ${Math.round(right_triangle3.perimetr())}<br>`;
+        console.log(right_triangle3);
+    </script>  
+</body>
+</html>

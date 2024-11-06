@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T11cw1a</title>
+</head>
+<body>
+    <p id="a"></p>
+    <script>
+        let out=document.getElementById("a");
+   
+        let person={
+            name: 0,
+            surname: 0,
+            hight: 0,
+            wight: 0,
+            greet : function()
+            {
+                return `Witaj ${this.name} ${this.surname}<br>`;
+            },
+            information : function(){
+                return `Imię i nazwisko: ${this.name} ${this.surname}<br>
+                Wzrost: ${this.hight}<br>
+                Waga: ${this.wight}<br>`;
+            }
+        }
+        person.name = prompt("Podaj imię: ");
+        person.surname = prompt("Podaj nazwisko: ");
+        person.hight = parseInt(prompt("Podaj wzrost: "));
+        person.wight = parseInt(prompt("podaj wagę: "));
+        console.log(person);
+        out.innerHTML+=person.greet();
+        out.innerHTML+=person.information();
+
+    </script>  
+</body>
+</html>

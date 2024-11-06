@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T10cw3</title>
+</head>
+<body>
+    <p id="a"></p>
+    <script>
+        let out=document.getElementById("a");
+        
+        let person=new Object({
+            name: "Sasha",
+            surname: 'Mykytiuk',
+            birth: '27.07.2007',
+            adres:new Object({
+            street:"Kwiatowa",
+            house: 465,
+            float:98,
+            postcod:"78678-787",
+            sity: "Pozanań"
+        })
+    })
+        console.log(person);
+        out.innerHTML+=`Imię: ${person.name}<br>
+                        Nazwisko: ${person.surname}<br>
+                        Data urorzenia: ${person.birth}<br>`;
+        out.innerHTML+=`Adres: <br>
+                        Ulica: ${person.adres.street}<br>
+                        Nr. domu: ${person.adres.house}<br>
+                        Nr. mieszkania: ${person.adres.float}<br>
+                        Kod pocztowy: ${person.adres.postcod}<br>
+                        Miejscowość: ${person.adres.sity}`;
+                  
+    </script>
+</body>
+</html>

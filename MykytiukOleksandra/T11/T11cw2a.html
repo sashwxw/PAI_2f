@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T11cw2a</title>
+</head>
+<body>
+    <p id="a"></p>
+    <script>
+        let out=document.getElementById("a");
+        let right_triangle={
+            a:0,
+            b:0,
+            c: function()
+            {
+                c=Math.sqrt(this.a*this.a+this.b*this.b);
+                return c;
+            },
+            area: function()
+            {
+                return (this.a*this.b)/2;
+            },
+            perimetr: function()
+            {
+                return (this.a+this.b+this.c());
+            }
+        }
+        right_triangle.a=parseInt(prompt("Podaj bok a: "));
+        right_triangle.b=parseInt(prompt("Podaj bok a: "));
+        console.log(right_triangle);
+        out.innerHTML+=`Pryprostokąntna a = ${right_triangle.a}<br>
+                        Przyprostokąnta b = ${right_triangle.b}<br>
+                        Przeciwprostokątna c = ${right_triangle.c()}<br>`;
+        out.innerHTML+=`Pole = ${right_triangle.area()} <br>`;
+        out.innerHTML+=`Obwód = ${right_triangle.perimetr()}`;
+    </script>  
+</body>
+</html>
