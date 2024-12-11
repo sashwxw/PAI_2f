@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1b</title>
+    <style>
+        body{
+            background-color: #0d0f6d;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="class1">Nadgłówek z klasą="class1"</h1>
+    <h2 class="class2">Nadgłówek z klasą="class2"</h2>
+    <p class="class1">Akapit z klasą="class1"</p>
+    <p class="class1">Drugi akapit z klasą="class1"</p>
+    <p id="id">Akapit bez klasy z identyfikatorem</p>
+    <ul>
+        <li>punkt pierwszy</li>
+        <li>punkt drugi</li>
+        <li>punkt trzeci</li>
+        <li>punkt czwarty</li>
+    </ul>
+    <p><button onclick="function1()">Zmień kolor tla pierwszego akapitu z klasą="class1"</button></p>
+    <p><button onclick="function2()">Zmień kolor i tekst akapitu z identyfikatorem</button></p>
+    <p><button onclick="function3()">Zmień kolor tła 2 ostatnich puktów listy</button></p>
+    <script>
+        let chous1=false;
+        let chous2=false;
+        let chous3=false;
+        function function1(){
+        if(!chous1){
+            document.querySelector("p.class1").style.backgroundColor="#79ADDC"
+            chous1=true;
+        }
+        else{
+            document.querySelector("p.class1").style.backgroundColor="";
+            chous1=false;
+        }
+    }
+    function function2(){
+        let out2=document.querySelector("#id");
+        if(!chous2){
+            //document.querySelector("p.class1").style.backgroundColor="#e2e2ee";
+            //document.querySelector("p")
+            out2.style.backgroundColor="#e2e2ee";
+            out2.style.color="black";
+            out2.innerHTML="Świetnie!"
+            chous2=true; 
+        }
+        else{
+            out2.style.backgroundColor="";
+            out2.style.color="";
+            out2.innerHTML="Akapit bez klasy z identyfikatorem";
+            chous2=false;
+        }
+    }
+    function function3(){
+        let out3=document.querySelectorAll("li")
+        if(!chous3){
+            for(let i=out3.length-1; i>=out3.length-2; i--){
+            out3[i].style.backgroundColor="#e486fc";
+            chous3=true;
+        }  
+        }
+        else {
+        for (let i=out3.length-1; i >= out3.length-2; i--) {
+            out3[i].style.backgroundColor = "";
+        }
+        chous3 = false; 
+    }
+    }
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+    <style>
+        button{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="one()" id="button1"></button>
+    <button onclick="two()" id="button2"></button>
+    <button onclick="three()" id="button3"></button>
+    <button onclick="four()" id="button4"></button>
+    <button onclick="five()" id="button5"></button>
+    <script>
+        let ch1 = false;  
+        let ch2 = false;
+        let ch3 = false;
+        let ch4 = false;  
+        let ch5 = false;
+        function one(){
+            let button1 = document.getElementById("button1")
+            if(!ch1){
+                button1.style.backgroundColor="red";
+                ch1=true;
+            }
+            else{
+                button1.style.backgroundColor="";
+                ch1=false;
+            }
+        }
+        function two(){
+            let button2 = document.getElementById("button2")
+            if(!ch2){
+                button2.style.backgroundColor="red";
+                ch2=true;
+            }
+            else{
+                button2.style.backgroundColor="";
+                ch2=false;
+            }
+        }
+        function three(){
+            let button3 = document.getElementById("button3")
+            if(!ch3){
+                button3.style.backgroundColor="red";
+                ch3=true;
+            }
+            else{
+                button3.style.backgroundColor="";
+                ch3=false;
+            }
+        }
+        function four(){
+            let button4 = document.getElementById("button4")
+            if(!ch4){
+                button4.style.backgroundColor="red";
+                ch4=true;
+            }
+            else{
+                button4.style.backgroundColor="";
+                ch4=false;
+            }
+        }
+        function five(){
+            let button5 = document.getElementById("button5")
+            if(!ch5){
+                button5.style.backgroundColor="red";
+                ch5=true;
+            }
+            else{
+                button5.style.backgroundColor="";
+                ch5=false;
+            }
+        }
+    </script>
+</body>
+</html>

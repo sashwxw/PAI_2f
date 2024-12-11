@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4a</title>
+
+</head>
+<body>
+    <p class="1">Lorem ipsum odor amet, consectetuer adipiscing elit. Tempor habitant per sodales placerat neque scelerisque sapien faucibus.</p>
+    <p class="2">Lorem ipsum odor amet, consectetuer adipiscing elit. Aliquet magna aenean mauris; pharetra ex iaculis rhoncus faucibus</p>
+    <p class="1">Lorem ipsum odor amet, consectetuer adipiscing elit. Magnis et turpis pellentesque; senectus eu tortor duis ultrices sodales. Mus nascetur bibendum vivamus adipiscing sed ridiculus.</p>
+    <p class="2">Lorem ipsum odor amet, consectetuer adipiscing elit. At scelerisque vitae sollicitudin tempor aenean odio elementum</p>
+    <p class="1">Lorem ipsum odor amet, consectetuer adipiscing elit. Ipsum lobortis adipiscing ac integer varius nec. Integer ac sem tempor congue; platea aliquam turpis interdum?</p>
+    <p class="2">Lorem ipsum odor amet, consectetuer adipiscing elit. Fames dapibus efficitur pharetra feugiat, vehicula mi pharetra? Vel vivamus senectus luctus; faucibus aenean sed phasellus imperdiet.</p>
+    <button onclick="one()">Formatuj parzyste</button> 
+    <button onclick="two()">Formatuj nieparzyste</button> 
+    <button onclick="three()">Formatuj 3 pierwsze</button> 
+    <button onclick="four()">Formatuj ostatni akapeit</button> 
+    <script>
+        let ch1 = false;  
+        let ch2 = false;
+        let ch3 = false;
+        let ch4 = false;  
+        function one(){
+            let out1=document.getElementsByClassName("2");
+            if(!ch1){
+                for (let i = 0; i <= out1.length; i++) {
+               out1[i].style.backgroundColor="black";
+               out1[i].style.color="#f5d317";
+               ch1=true;
+                }
+            }
+            else{
+                for (let i = 0; i <= out1.length; i++) {
+                out1[i].style.backgroundColor="";
+                out1[i].style.color="";
+               ch1=false;
+            }
+        }
+    }
+    function two(){
+            let out2=document.getElementsByClassName("1");
+            if(!ch2){
+                for (let i = 0; i <= out2.length; i++) {
+               out2[i].style.backgroundColor="black";
+               out2[i].style.color="#f5d317";
+               ch2=true;
+                }
+            }
+            else{
+                for (let i = 0; i <= out2.length; i++) {
+                out2[i].style.backgroundColor="";
+                out2[i].style.color="";
+               ch2=false;
+            }
+        }
+    }
+    function three(){
+            let out3=document.getElementsByTagName("p");
+            if(!ch3){
+                for (let i = 0; i < 3; i++) {
+               out3[i].style.backgroundColor="black";
+               out3[i].style.color="#f5d317";
+               ch3=true;
+                }
+            }
+            else{
+                for (let i = 0; i < 3; i++) {
+                out3[i].style.backgroundColor="";
+                out3[i].style.color="";
+               ch3=false;
+            }
+        }
+    }
+    function four(){
+            let out4=document.getElementsByTagName("p");
+            if(!ch4){ 
+               out4[out4.length-1].style.backgroundColor="black";
+               out4[out4.length-1].style.color="#f5d317";
+               ch4=true;
+                }
+            else{
+                out4[out4.length-1].style.backgroundColor="";
+                out4[out4.length-1].style.color="";
+               ch4=false;
+            }
+        }
+    </script>
+</body>
+</html>

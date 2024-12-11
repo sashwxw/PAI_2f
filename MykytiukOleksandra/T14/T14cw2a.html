@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2a</title>
+    <style>
+        body{
+            background-color: #9ebde9;
+        }
+    </style>
+</head>
+<body>
+    <ul id="a">
+        <li><a href="">Jeden</a></li>
+        <li><a href="">Dwa</a></li>
+        <li><a href="">Trzy</a></li>
+        <li><a href="">Cztery</a></li>
+        <li><a href="">Pięć</a></li>
+    </ul>
+    <button onclick="hide()">Ukryj menu</button>
+    <button onclick="show()">Pokaż menu</button>
+<script>
+
+    function hide(){
+        document.getElementById("a").style.display="none";
+    }
+    function show(){
+        document.getElementById("a").style.display="block";
+    }
+</script>
+</body>
+</html>
