@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T11cw2b</title>
+</head>
+<body>
+    <h2>ZSK</h2>
+    <p id="a"></p>
+    <script>
+        let out=document.getElementById("a");
+        function person(name, surname, age){
+            this.name=name;
+            this.surname=surname;
+            this.age=age;
+        }
+        function school(teacher, subject, clas, student)
+        {
+            
+            this.teacher=teacher;
+            this.subject=subject;
+            this.clas=clas;
+            this.student=student;
+        }
+        let teach=new person("Jan", "Kowalski", 36);
+        let stud=new person("Adam", "Nowak", 17);
+        let school1=new school(teach, "tworzenia stron", "3IA1",stud);
+        out.innerHTML+=`Nauczyciel ${teach.name} ${teach.surname} uczy przedmiotu ${school1.subject}.<br>
+                        Uczeń ${stud.name} ${stud.surname} chodzi do klasy ${school1.clas}, której wychowawcą jest ${teach.name} ${teach.surname}`;
+    </script>  
+</body>
+</html>

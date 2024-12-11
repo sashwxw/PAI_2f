@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T11cw3</title>
+</head>
+<body>
+    <p id="a"></p>
+    <script>
+        let out=document.getElementById("a");
+        function Circle(r)
+        {
+            this.r=r;
+            this.area=function()
+            {
+                return Math.round(Math.PI*r*r);
+            }
+            this.perimetr=function()
+            {
+                return Math.round(Math.PI*r*2);
+            }
+        }
+        console.log(Circle);
+        let kolo1 = new Circle(5);
+        let kolo2 = new Circle(10);
+        let kolo3 = new Circle(15);
+        let kolo4 = new Circle(20);
+        out.innerHTML+=`Koło z promieniem ${kolo1.r}: <br>
+                        Pole: ${kolo1.area()}<br>
+                        Obwód: ${kolo1.perimetr()}<br>
+                        Koło z promieniem ${kolo2.r}: <br>
+                        Pole: ${kolo2.area()}<br>
+                        Obwód: ${kolo2.perimetr()}<br>
+                        Koło z promieniem ${kolo3.r}:<br>
+                        Pole: ${kolo3.area()}<br>
+                        Obwód: ${kolo3.perimetr()}<br>
+                        Koło z promieniem ${kolo4.r}:<br>
+                        Pole: ${kolo4.area()}<br>
+                        Obwód: ${kolo4.perimetr()}<br>`;
+                    
+    </script>
+</body>
+</html>
+
+
+ 
+
+
+
+
+
