@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+</head>
+<body>
+    <ol id="a"></ol>
+    <script>
+        let out=document.getElementById("a");
+        let holiday ={
+            term: `2 tygodnia`,
+            time_sleep: `8 godzin`,
+            trip: `Warszawa`,
+            time_trip: `1 tydzień`
+        }
+        for(let key in holiday){
+            out.innerHTML+=`<li><b>${key}:</b>  ${holiday[key]}`;
+        }
+        
+    </script>
+</body>
+</html>

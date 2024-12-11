@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+</head>
+<body>
+    <p id="a"></p>
+    <script>
+        let out=document.getElementById("a");
+        let table=[`SadSvit`, `Nikow`, `Skriabin`, `Lana Del Rey`];
+        out.innerHTML+=`<ul>`;
+        for(let key in table){
+            out.innerHTML+=`<li>${table[key]}</li>`;
+        }
+        out.innerHTML+=`</ul>`;
+
+
+        out.innerHTML+=`<ol>`;
+        table.forEach(item => {
+            out.innerHTML+=`<li>${item}</li>`;
+        });
+        out.innerHTML+=`</ol>`;
+    </script>
+</body>
+</html>

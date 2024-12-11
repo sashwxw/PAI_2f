@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9</title>
+</head>
+<body>
+    <p id="a"></p>
+    <script>
+        let out=document.getElementById("a");
+        let dniTygodnia = ["niedziela", "poniedziałek", "wtorek", "środa", "czwartek", "piątek", "sobota"];
+        let miesiace = ["stycznia", "lutego", "marca", "kwietnia", "maja", "czerwca", "lipca", "sierpnia", "września", "października", "listopada", "grudnia"];
+        let dniMiesiacaSlownie = ["", "pierwszy", "drugi", "trzeci", "czwarty", "piąty","szósty", "siódmy", "ósmy", "dziewiąty", "dziesiąty","jedenasty", "dwunasty", "trzynasty", "czternasty","piętnasty", "szesnasty", "siedemnasty", "osiemnasty","dziewiętnasty", "dwudziesty", "dwudziesty pierwszy","dwudziesty drugi", "dwudziesty trzeci", "dwudziesty czwarty","dwudziesty piąty", "dwudziesty szósty", "dwudziesty siódmy","dwudziesty ósmy", "dwudziesty dziewiąty", "trzydziesty","trzydziesty pierwszy"];
+        let today=new Date();
+        let week=dniTygodnia[today.getDay()];
+        let month=miesiace[today.getMonth()];
+        let day=dniMiesiacaSlownie[today.getDate()];
+        out.innerHTML+= `${week} ${day} ${month}`;
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7</title>
+</head>
+<body>
+    <p id="a"></p>
+    <script>
+        let out=document.getElementById("a");
+        let num=parseInt(prompt("Podaj liczbę: "));
+        if(num>=0){
+            out.innerHTML+=`Pierwiastek kwadratowy: ${Math.sqrt(num)}<br> 
+            Zaokrąglenie do dołu: ${Math.floor(num)}<br>
+            Logarytm naturalny: ${Math.log(num)}<br>`;
+        }
+        else{
+            out.innerHTML+=`Liczba musi być dodatnia!!!`;
+        }
+    </script>
+</body>
+</html>

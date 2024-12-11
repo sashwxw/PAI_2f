@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4</title>
+</head>
+<body>
+    <p id="a"></p>
+    <script>
+        let out=document.getElementById("a");
+        let table=[`SadSvit`, `Nikow`, `Skriabin`, `Lana Del Rey`];
+        let dodanie=table.push(`emm`, `noname`);
+        for(let key in table){
+            out.innerHTML+=`${table[key]}, `;
+        };
+        out.innerHTML+=`<br>`;
+        /*let last1=table.pop();
+        let last2=table.pop();
+        let last3=table.pop();
+        for(let key in table){
+           out.innerHTML+=`${table[key]}, `;
+        };*/
+        let deleted=table.splice(3, table.length-1);
+        for(let key in table){
+            out.innerHTML+=`${table[key]}, `;
+        };
+    </script>
+</body>
+</html>

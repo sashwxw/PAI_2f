@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        button{
+            background-color: #f38af3;
+            color: #9e0370;
+            padding: 15px;
+            font-size: 20px;
+            border-color: #9e0370;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="openWin()" >Otwórz okno</button>
+    <script>
+        function openWin(){
+            let myWin=window.open("","Nowe okno", "width=400, height=200");
+            myWin.document.write("<p> to jest moje okno</p>");
+            setTimeout(function(){ myWin.close()}, 60000);
+        }
+    </script>
+</body>
+</html>

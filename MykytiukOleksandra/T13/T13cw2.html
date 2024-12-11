@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+    <style>
+        body{
+            background-color: #161a46;
+            color: white;
+        }   
+        table, tr, th{
+            padding: 5px;
+            border-collapse: collapse;
+            border: solid #2afc70 1px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <script>
+            let text=`Nowy rok!`;
+            for(let i in text){
+                document.write(`<tr><th>${text[i]}</th></tr>`);
+            }
+        </script>
+    </table>
+</body>
+</html>

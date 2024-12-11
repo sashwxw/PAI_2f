@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5</title>
+</head>
+<body>
+    <p id="a"></p>
+    <script>
+        let out=document.getElementById("a");
+        let table1=[`barszcza`, `pierogów`, `pizzy`];
+        let table2=[`ziemniaków`, `zupy pomidorowej`, `syrników`];
+        out.innerHTML+=`moje menu może składać się z `;
+        /*for(let eat of table2){
+            table1.push(eat);
+        }
+        for(let eat of table1){
+            out.innerHTML+=`${eat}, `;
+        }*/
+       table1.push(...table2);
+       for(let eat of table1){
+            out.innerHTML+=`${eat}, `;
+        }
+    </script>    
+</body>
+</html>
